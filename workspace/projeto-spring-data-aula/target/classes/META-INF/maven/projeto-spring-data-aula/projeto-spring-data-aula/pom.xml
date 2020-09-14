@@ -44,15 +44,11 @@
 		<!-- https://mvnrepository.com/artifact/org.postgresql/postgresql -->
 
 
-		<dependency>
-
-			<groupId>org.postgresql</groupId>
-
-			<artifactId>postgresql</artifactId>
-
-			<version>9.2-1003-jdbc4</version>
-
-		</dependency>
+<dependency>
+    <groupId>mysql</groupId>
+    <artifactId>mysql-connector-java</artifactId>
+    <version>5.1.6</version>
+ </dependency>
 
 		<!-- HIBERNATE -->
 
