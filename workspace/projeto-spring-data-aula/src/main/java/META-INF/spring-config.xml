@@ -15,7 +15,7 @@
 
 <bean class="org.springframework.jdbc.datasource.DriverManagerDataSource" id="dataSource">
 
-<property value="com.mysql.jdbc.Driver" name="driverClassName"/>
+<property value="com.mysql.cj.jdbc.Driver" name="driverClassName"/>
 
 <property value="jdbc:mysql://localhost/posjavaspring" name="url"/>
 
