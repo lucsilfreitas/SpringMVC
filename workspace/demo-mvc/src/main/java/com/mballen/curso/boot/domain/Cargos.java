@@ -1,6 +1,5 @@
 package com.mballen.curso.boot.domain;
 
-
 import java.util.List;
 
 import javax.persistence.Column;
@@ -15,15 +14,14 @@ import javax.persistence.Table;
 @Table(name = "CARGOS")
 public class Cargos extends AbstractEntity<Long> {
 
-	
 	@Column(name = "nome", nullable = false, unique = true, length = 60)
 	private String nome;
 	
 	@ManyToOne
-	@JoinColumn(name = "id_departamento-fk")
+	@JoinColumn(name = "id_departamento_fk")
 	private Departamentos departamento;
 	
-	@OneToMany(mappedBy = "cargos")
+	@OneToMany(mappedBy = "cargo")
 	private List<Funcionarios> funcionarios;
 
 	public String getNome() {
@@ -48,9 +46,5 @@ public class Cargos extends AbstractEntity<Long> {
 
 	public void setFuncionarios(List<Funcionarios> funcionarios) {
 		this.funcionarios = funcionarios;
-	}
-	
-	
-	
-	
+	} 	
 }
