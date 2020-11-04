@@ -2,17 +2,17 @@ package com.mballen.curso.boot.dao;
 
 import java.util.List;
 
-import com.mballen.curso.boot.domain.Funcionarios;
+import com.mballen.curso.boot.domain.Funcionario;
 
 public interface FuncionarioDao {
 
-	void save(Funcionarios funcionario);
+	void save(Funcionario funcionario);
 
-    void update(Funcionarios funcionario);
+    void update(Funcionario funcionario);
 
     void delete(Long id);
 
-    Funcionarios findById(Long id);
+    Funcionario findById(Long id);
 
-    List<Funcionarios> findAll();
+    List<Funcionario> findAll();
 }

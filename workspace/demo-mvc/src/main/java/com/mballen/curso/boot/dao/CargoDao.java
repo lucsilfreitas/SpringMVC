@@ -2,17 +2,17 @@ package com.mballen.curso.boot.dao;
 
 import java.util.List;
 
-import com.mballen.curso.boot.domain.Cargos;
+import com.mballen.curso.boot.domain.Cargo;
 
 public interface CargoDao {
 
-	void save(Cargos cargo);
+	void save(Cargo cargo);
 
-    void update(Cargos cargo);
+    void update(Cargo cargo);
 
     void delete(Long id);
 
-    Cargos findById(Long id);
+    Cargo findById(Long id);
 
-    List<Cargos> findAll();
+    List<Cargo> findAll();
 }
