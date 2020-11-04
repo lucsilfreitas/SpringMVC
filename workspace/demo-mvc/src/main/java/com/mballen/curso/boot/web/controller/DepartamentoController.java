@@ -46,7 +46,7 @@ public class DepartamentoController {
 	@PostMapping("/editar")
 	public String editar (Departamento departamento) {
 		service.editar(departamento);
-		return "redirect:/departamento/cadastrar";
+		return "redirect:/departamentos/cadastrar";
 	}
 	
 	
